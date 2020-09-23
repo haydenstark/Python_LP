@@ -4,6 +4,7 @@
  * [Zomato API](#zomato-api)
  * [Saving API Data: MyList](#saving-api-data-mylist)
  * [Front End](#front-end)
+ * [Skills Learned](#skills-learned)
 
 ## Intro
 During a two week sprint, I worked solo creating an app using Django to display a searchable collection of restaurants - called 'Dine-List'. Within this app, the user has the ability to search nearby or via city, save any found restaurant locally (to 'MyList'), edit some fields of the restaurant and add their own rating and comments, and add their own restaurant alongside others locally (in the event they couldn't find a known restaurant). This was my first experience using APIs and this app uses three in total - Zomato API for the restaurants, HERE Maps API to display restaurants in a map view, and IP-api for current user geolocation - as well as Beautiful Soup to datascrape the web and populate any restaurant images not received from Zomato's API. While this project seemed daunting at first, I quickly became entrenched in it and found I still have a ton of ideas I'd like to eventually go back and add in. In all, I was able to finish nine user stories and below are further descriptions of what I was able to accomplish within those two weeks.
