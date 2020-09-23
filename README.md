@@ -138,7 +138,7 @@ Below is a very small portion of a restaurant card (the menu button and MyRating
        {% endif %}
 
 ## Front End
-For this project, I utilized Bootstrap for my front-end. I've used bootstrap before, but this project gave me a lot more insight and a better understanding of how their layout system works and how to better customize their classes to fit my ideas for the presentation of the site. I strongly encourage to check out the demo video - seeing presentation is better than trying to read presentation!
+For this project, I utilized Bootstrap for my front-end. I've used bootstrap before, but this project gave me a lot more insight and a better understanding of how their layout system works and how to better customize their classes to fit my ideas for the presentation of the site. I strongly encourage to check out the demo video - seeing presentation is better than trying to read presentation! [Link to demo](https://youtu.be/mXxXeUksQck)
 
 ## Skills Learned
 * Better understanding of Django
