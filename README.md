@@ -1,5 +1,9 @@
 # Python_LP
  Code summary of Python/Django Live Project
+ * [Search Functionality](#search-functionality)
+ * [Zomato api](#zomato-api)
+ * [Saving api data: MyList](#saving-api-data-mylist)
+ * [Front End](#front-end)
 
 ## Intro
 During a two week sprint, I worked solo creating an app using Django to display a searchable collection of restaurants - called 'Dine-List'. Within this app, the user has the ability to search nearby or via city, save any found restaurant locally (to 'MyList'), edit some fields of the restaurant and add their own rating and comments, and add their own restaurant alongside others locally (in the event they couldn't find a known restaurant). This was my first experience using apis and this app uses three in total - Zomato API for the restaurants, HERE Maps api to display restaurants in a map view, and IP-api for current user geolocation - as well as Beautiful Soup to datascrape the web and populate any restaurant images not received from Zomato's api. While this project seemed daunting at first, I quickly became entrenched in it and found I still have a ton of ideas I'd like to eventually go back and add in. In all, I was able to finish nine user stories and below are further descriptions of what I was able to accomplish within those two weeks.
@@ -46,7 +50,7 @@ The first issue I ran into was realizing there are multiple cities with the same
 While this search functionality works for the interim, in the future I would instead populate the back-end of the home page with all potential searchable cities and create a suggestive search bar as the user is typing.
 My preferred method of searching was the 'near me' functionality. The biggest hurdle I had to overcome with finding the user's location was that the app was being run completely locally (considering this project wasn't going to go live). I fortunately found IP-api, a free geolocation api, that automatically pulled your IP address without needing to provide it and, though it works, it's a rather rough guess - it's not completely accurate, but does find the general area you are currently in. 
 
-## Zomato API
+## Zomato api
 The bulk of the app - in all, I collected eighteen different variables from the api for all needed information (and without overloading the user).
 
         def iterateResponse(response, lat, lon):
@@ -101,7 +105,7 @@ The bulk of the app - in all, I collected eighteen different variables from the 
             
 To avoid information overload, a lot of the data is tucked into a details panel on each restaurant's card that is only displayed when an 'info' button is clicked. Latitude and longitude aren't necessarily user-friendly and are not displayed, but needed to populate the map view. One functionality I would like to eventually add is creating an href on each map item to relocate the user to that specified restaurant in the List View. Filters are also available at the top of the search results page for the user to narrow down what they're looking for (restaurant name, dish, cuisine type, order by rating or price, and show restaurants within a specified radius) - this is sent as another query to Zomato's api and re-renders the search results page.
 
-## Saving api data / MyList
+## Saving api data: MyList
 This is the section that has the most potential for so many additional features! It could very easily be transformed into a social networking system emulating a facebook or twitter feed. Future ideas are adding a login system, allowing users to share restaurants with each other, a poll that asks you and your friends what cuisine sounds best for dinner tonight and showing a list of suggested restaurants based on the group's top choice... Showing restaurants that are currently being frequented by your friends or popular in your area, the list goes on and on! For now, the site currently allows the user to add their own rating and comments, known as 'MyRating' and 'MyComments', without mixing in with the rating received from the api. One hurdle was allowing the user to add their own restaurant locally. In order to not overwhelm the user with form fields, I limited the amount of input fields, but in effect had to incorporate a lot of 'if none' logic for the restaurant cards displayed in 'MyList'. Essentially, since a user-added restaurant was going to be missing a significant amount of information compared to ones received from the Zomato api, there are a lot of 'if' statements for the system to run through to avoid displaying 'None' across the entire restaurant card, but still allows information from the Zomato api to be displayed.
 Below is a very small portion of a restaurant card (the menu button and MyRating - user rating separate from the api rating)
 
@@ -129,8 +133,8 @@ Below is a very small portion of a restaurant card (the menu button and MyRating
        </div>
        {% endif %}
 
-## Front End / UI
-For this project, I utilized bootstrap for my front-end. I had used bootstrap before, but this project gave me a lot more insight and a better understanding of how their layout system works and how to better customize their classes to fit my ideas for the presentation of the site. I strongly encourage to check out the demo video - seeing presentation is better than trying to read presentation!
+## Front End
+For this project, I utilized Bootstrap for my front-end. I've used bootstrap before, but this project gave me a lot more insight and a better understanding of how their layout system works and how to better customize their classes to fit my ideas for the presentation of the site. I strongly encourage to check out the demo video - seeing presentation is better than trying to read presentation!
 
 ## Skills Learned
 * Better understanding of Django
