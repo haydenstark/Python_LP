@@ -133,16 +133,16 @@ Below is a very small portion of a restaurant card (the menu button and MyRating
 For this project, I utilized bootstrap for my front-end. I had used bootstrap before, but this project gave me a lot more insight and a better understanding of how their layout system works and how to better customize their classes to fit my ideas for the presentation of the site. I strongly encourage to check out the demo video - seeing presentation is better than trying to read presentation!
 
 ## Skills Learned
-*Better understanding of Django
-*Better understanding of Bootstrap
-*Utilizing Beautiful Soup
-*Communicating with and pulling data from apis
-*User-error proofing form fields client-side
-*Error proofing form submissions back-end
-*Cleaning data before committing it to database
-*Communicating with a team if an idea is the appropriate approach before taking action
-*Better understanding and utilizing responsive design
-*Error proofing dynamically populated web pages
-*Understanding system error messages more rapidly
-*Passing multitude of variables throughout site and reusing those variables when needed
-*Improved time management
+* Better understanding of Django
+* Better understanding of Bootstrap
+* Utilizing Beautiful Soup
+* Communicating with and pulling data from apis
+* User-error proofing form fields client-side
+* Error proofing form submissions back-end
+* Cleaning data before committing it to database
+* Communicating with a team if an idea is the appropriate approach before taking action
+* Better understanding and utilizing responsive design
+* Error proofing dynamically populated web pages
+* Understanding system error messages more rapidly
+* Passing multitude of variables throughout site and reusing those variables when needed
+* Improved time management
