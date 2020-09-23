@@ -2,7 +2,7 @@
  Code summary of Python/Django Live Project
  * [Search Functionality](#search-functionality)
  * [Zomato API](#zomato-api)
- * [Saving API data: MyList](#saving-api-data-mylist)
+ * [Saving API Data: MyList](#saving-api-data-mylist)
  * [Front End](#front-end)
 
 ## Intro
